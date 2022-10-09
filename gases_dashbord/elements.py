@@ -3,7 +3,6 @@ from dash import dcc, html
 
 from .config import PATH
 
-
 files = [i.replace('.csv', '').replace('_', ' ') for i in sorted(os.listdir(PATH + os.sep + 'CO2'))]
 
 dropdown = dcc.Dropdown(
